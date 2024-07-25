@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="position-sticky top-0 z-1">
+      <nav class="navbar navbar-expand-lg shadow-lg bg-white py-3">
+        <div class="container">
+          <a class="navbar-brand font" href="#">AR Developers</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#skills"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+            </ul>
+            <a href="#contact" class="header-btn text-decoration-none"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="bg-blue" id="home">
+        <div class="container">
+          <div
+            class="row gy-5 pt-5 pt-6 justify-content-center align-items-center"
+          >
+            <div class="col-sm-12 col-lg-6">
+              <p class="font fw-semibold">Hey, I am Abdul Razaque</p>
+              <h1 class="font-2 fw-bold">Crafting Engaging Web Experiences</h1>
+              <p class="font fw-semibold">
+                Passionate frontend developer skilled in HTML, CSS, Bootstrap
+                and JavaScript, dedicated to creating seamless, responsive web
+                experiences.
+              </p>
+              <button
+                class="header-btn"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Get in Touch
+              </button>
+              <!-- modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content p-2 pt-3 rounded-4">
+                    <div
+                      class="modal-body d-flex flex-column justify-content-between"
+                      style="height: 480px"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <h1
+                          class="modal-title fs-4 font fw-bold"
+                          id="exampleModalLabel"
+                        >
+                          Sign Up
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <form action="">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control bg-transparent fw-normal placeholder-xs"
+                            id="name"
+                            placeholder="Enter Your Name"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control bg-transparent fw-normal"
+                            id="email"
+                            placeholder="Enter Email address"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control bg-transparent fw-normal"
+                            id="password"
+                            placeholder="Enter Password"
+                            required
+                          />
+                          <p class="text-body-tertiary fw-normal mt-1 fs-7">
+                            By Signup, you agree to our
+                            <span class="green-clr">Terms of Service</span> &
+                            <span class="green-clr">Privacy Policy</span>
+                          </p>
+                        </div>
+                        <button
+                          type="submit"
+                          class="rounded-3 btn btn-primary border-0 text-white px-3 fw-bolder"
+                        >
+                          Sign Up
+                        </button>
+                      </form>
+                      <p class="font fw-medium text-body-tertiary text-center">
+                        Already have an account?<a
+                          href=""
+                          class="green-clr text-decoration-none ms-1"
+                          >Sign in</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 text-center text-lg-end mb-5">
+              <img
+                src="/images/HD-wallpaper-a-r-name-a-r-letter-ar.png"
+                class="img-fluid w-75"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-6" id="skills">
+        <p class="font fw-semibold">My Skills</p>
+        <h2 class="font-2 fw-bold">My Expertise</h2>
+        <div class="row gx-4 gy-4 gy-lg-0 mt-5">
+          <div class="col-sm-12 col-lg-3">
+            <div class="bg-primary-subtle p-3 rounded-3">
+              <iconify-icon
+                icon="icon-park:html-five"
+                class="fs-1"
+              ></iconify-icon>
+              <h1 class="fs-6">HTML 5</h1>
+              <p>
+                Expertise in creating well-structured websites with optimal SEO
+                practices, including meta tags, descriptive titles, and
+                organized content to enhance search engine visibility and user
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="bg-primary-subtle p-3 rounded-3">
+              <iconify-icon
+                icon="vscode-icons:file-type-css"
+                class="fs-1"
+              ></iconify-icon>
+              <h1 class="fs-6">CSS 3</h1>
+              <p>
+                Proficient in designing responsive, visually appealing websites
+                with advanced CSS3 techniques, including animations,
+                transitions, and flexbox/grid layouts for optimal user
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="bg-primary-subtle p-3 rounded-3">
+              <iconify-icon icon="logos:bootstrap" class="fs-1"></iconify-icon>
+              <h1 class="fs-6">Bootstrap 5</h1>
+              <p>
+                Proficient in leveraging Bootstrap to create responsive and
+                modern web designs. Skilled in utilizing Bootstrap's components
+                and grid system to streamline development and enhance usability.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="bg-primary-subtle p-3 rounded-3">
+              <iconify-icon
+                icon="skill-icons:javascript"
+                class="fs-1"
+              ></iconify-icon>
+              <h1 class="fs-6">JavaScript</h1>
+              <p>
+                Proficient in developing dynamic and interactive web
+                applications with JavaScript. Skilled in DOM manipulation, event
+                handling, and API integration for responsive and engaging user
+                interfaces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-6" id="about">
+        <div
+          class="row d-flex flex-lg-row flex-column-reverse align-items-center justify-content-center"
+        >
+          <div
+            class="col-sm-12 col-md-5 text-center text-lg-start mt-5 mt-lg-0"
+          >
+            <img
+              src="/images/Portfolio pic.jpg"
+              class="img-fluid rounded-3"
+              width="300px"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <span class="ms-0 font-2 fw-medium">About</span>
+            <h5 class="ms-0 fs-2 mt-2 mb-4 font fw-bolder">About Me</h5>
+            <p class="font-2">
+              Currently pursuing a Bachelor's in Computer Science, I'm dedicated
+              to advancing my skills through a 12-month apprenticeship at xWave,
+              focusing on HTML, CSS, and Bootstrap. Recently started learning
+              JavaScript to expand my skill set. I've crafted 3+ websites and 5+
+              landing pages. Complementing my technical training, I prioritize
+              enhancing communication skills and career development through
+              English and Professional Development classes. Eager to explore web
+              development opportunities and collaborate on impactful projects.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-6" id="portfolio">
+        <!-- heading of cards -->
+        <div class="d-flex align-items-center justify-content-between mb-5">
+          <div>
+            <p class="font fw-semibold text-black">Recent Projects</p>
+            <h2 class="fs-2 font-2 fw-bolder text-black">My Portfolio</h2>
+          </div>
+          <div>
+            <button
+              class="btn btn-warning d-flex align-items-center py-3 px-3 justify-content-between"
+            >
+              <a
+                href="https://github.com/AbdulRazaque665"
+                class="text-decoration-none"
+              >
+                <iconify-icon
+                  icon="bi:github"
+                  class="me-2 text-black"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="logos:github"
+                  class="text-black"
+                ></iconify-icon
+              ></a>
+            </button>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-sm-12 col-md-4">
+            <div class="card">
+              <img
+                src="/images/1.png"
+                class="card-img-top"
+                alt="..."
+                height="180rem"
+              />
+              <div class="card-body">
+                <h5 class="card-title font-2 fw-bolder">Organic Foods</h5>
+                <a
+                  href="https://organic-food-ten.vercel.app/"
+                  class="btn btn-dark mt-2"
+                  >Visit It</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card">
+              <img
+                src="/images/2.png"
+                class="card-img-top"
+                alt="..."
+                height="180rem"
+              />
+              <div class="card-body">
+                <h5 class="card-title font-2 fw-bolder">Freshcart</h5>
+                <a
+                  href="https://fresh-cart-brown.vercel.app/"
+                  class="btn btn-dark mt-2"
+                  >Visit it</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card">
+              <img
+                src="/images/3.png"
+                class="card-img-top"
+                alt="..."
+                height="180rem"
+              />
+              <div class="card-body">
+                <h5 class="card-title font-2 fw-bolder">Food Delivery</h5>
+                <a
+                  href="https://food-delivery-plum.vercel.app/"
+                  class="btn btn-dark mt-2"
+                  >Visit it</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-6" id="contact">
+        <div class="text-center mb-5">
+          <p class="font fw-medium">Get in Touch</p>
+          <h1 class="font-2 fw-bolder">Contact Me</h1>
+        </div>
+        <form action="">
+          <div class="row mx-6">
+            <div class="col-sm-12 col-lg-6 mb-3">
+              <label
+                for="formGroupExampleInput"
+                class="form-label font fw-medium"
+                >First name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-lg-6 mb-3">
+              <label
+                for="formGroupExampleInput2"
+                class="form-label font fw-medium"
+                >Last name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-lg-6 mb-3">
+              <label
+                for="formGroupExampleInput"
+                class="form-label font fw-medium"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="formGroupExampleInput"
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-lg-6 mb-3">
+              <label
+                for="formGroupExampleInput2"
+                class="form-label font fw-medium"
+                >Phone number</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="formGroupExampleInput2"
+                required
+              />
+            </div>
+            <div class="col-12 mb-3">
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label font fw-medium"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                  required
+                />
+                <label class="form-check-label font fw-medium" for="gridCheck">
+                  I accept the terms
+                </label>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-primary px-4" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="mt-6 bg-footer">
+      <div class="container d-flex justify-content-between py-5">
+        <a class="navbar-brand font fs-5" href="#">AR Developers</a>
+        <div class="">
+          <a
+            href="https://www.facebook.com/profile.php?id=100011606539533"
+            class="text-decoration-none icons"
+          >
+            <iconify-icon
+              icon="ri:facebook-fill"
+              class="fs-5 me-2"
+            ></iconify-icon>
+          </a>
+          <a
+            href="https://www.instagram.com/itx_razaque72/"
+            class="text-decoration-none icons"
+          >
+            <iconify-icon icon="mdi:instagram" class="fs-5 me-2"></iconify-icon>
+          </a>
+          <a href="" class="text-decoration-none icons">
+            <iconify-icon
+              icon="ri:twitter-x-fill"
+              class="fs-5 me-2"
+            ></iconify-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/razaque-khan"
+            class="text-decoration-none icons"
+          >
+            <iconify-icon icon="bi:linkedin" class="fs-5"></iconify-icon>
+          </a>
+        </div>
+      </div>
+      <div class="container"><hr /></div>
+      <div class="container d-flex justify-content-between">
+        <h5 class="fs-6">Made by Abdul Razaque</h5>
+        <div>
+          <ul class="list-unstyled d-flex">
+            <li class="fs-7 nav-link">Privacy Policy</li>
+            <li class="fs-7 nav-link">Terms of Service</li>
+            <li class="fs-7 nav-link">Cookies Setting</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
